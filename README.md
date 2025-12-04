@@ -1,2 +1,3 @@
 # Advent-of-code-2025
-my C++ not uploaded in order solutions for AOC 2025, not most optimal ^_^
+my C++ solutions for AOC 2025 (might be some missing since i forgot to add them), not most optimal ^_^
+
