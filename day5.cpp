@@ -34,7 +34,7 @@ int solve1() {
         }
     }
     return count;
-}
+}///ans:525
 int main() {
     read();
     cout<<solve1();
