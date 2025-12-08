@@ -92,7 +92,54 @@ void solve1() {
         prod*=sizes[i];
     cout<<prod;
 }///ans:153328
+bool united(int x,int y) {
+    return getRoot(x)==getRoot(y);
+}
+bool done(int n) {
+    int r=getRoot(1);
+    for (int i=2; i<=n; i++) {
+        if (getRoot(i)!=r) {
+            return false;
+        }
+    }
+    return true;
+}
+void solve2() {
+    coords c;
+    v.push_back({0,0,0});
+    while (fin>>c) {
+        v.push_back(c);
+    }
+    int n=v.size()-1;
+    root.resize(n+1);
+    rang.resize(n+1);
+    for (int i=1; i<=n; i++) {
+        root[i]=i;
+        rang[i]=0;
+    }
+    for (int i=1; i<n; i++) {
+        for (int j=i+1; j<=n; j++) {
+            p.push_back({i,j});
+        }
+    }
+    sort(p.begin(),p.end(),[](pair<int,int> a,pair<int,int> b) {
+        return (dist(a.first,a.second)<dist(b.first,b.second));
+    });
+    for (int i=0; i<p.size(); i++) {
+        int x=p[i].first,y=p[i].second;
+        if (united(x,y)==true) {
+            continue;
+        }
+        unite(x,y);
+        if (done(n)==true) {
+            long long prod=(long long)v[x].x*(long long)v[y].x;
+            cout<<prod;
+            return;
+        }
+    }
+}///ans: 6095621910
 int main() {
-    solve1();
+    ///solve1();
+    solve2();
     return 0;
 }
