@@ -91,7 +91,7 @@ void solve1() {
     for(int i=0; i<3&&i<sizes.size(); ++i)
         prod*=sizes[i];
     cout<<prod;
-}
+}///ans:153328
 int main() {
     solve1();
     return 0;
