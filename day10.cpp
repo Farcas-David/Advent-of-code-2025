@@ -43,7 +43,6 @@ void solve1() {
             j++;
             s.pop_back();
         }
-        cout<<fstate<<endl;
         s.pop_back();
         reverse(s.begin(), s.end());
         stringstream ss(s);
