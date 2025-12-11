@@ -1,9 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <cmath>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include "libaoc.h";
 ifstream fin("input.txt");
 struct coords{
     int x,y;

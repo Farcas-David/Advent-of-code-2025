@@ -1,11 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <bitset>
-#include <vector>
-using namespace std;
+#include "libaoc.h";
 ifstream file("input.txt");
 vector<bitset<150>> buttons;
 bitset<150> fstate;

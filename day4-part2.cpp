@@ -1,9 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <queue>
-using namespace std;
+#include "libaoc.h";
 
 ifstream fin("date.in");
 vector<string> rolls;

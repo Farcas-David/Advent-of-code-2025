@@ -1,8 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include "libaoc.h"
 ifstream file ("date.in");
 vector<pair<long long,long long>> range;
 void read(){

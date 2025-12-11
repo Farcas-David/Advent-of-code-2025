@@ -1,12 +1,4 @@
-#include <fstream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <iostream>
-#include <sstream>
-#include <queue>
-#include <stack>
-using namespace std;
+#include "libaoc.h";
 ifstream file("date.in");
 string line, ops;
 vector<vector<int>> num;

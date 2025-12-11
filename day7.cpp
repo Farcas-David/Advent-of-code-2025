@@ -1,9 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <queue>
-#include <bitset>
-using namespace std;
+#include "libaoc.h";
 ifstream file ("input.txt");
 vector<string> m;
 string line;

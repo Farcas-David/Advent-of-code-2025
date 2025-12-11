@@ -1,7 +1,4 @@
-#include <fstream>
-#include<iostream>
-#include <unordered_set>
-using namespace std;
+#include "libaoc.h";
 
 ifstream fin("date.in");
 unsigned long long a,b,sum=0;
