@@ -37,7 +37,7 @@ void solve1() {
             sol++;
     }
     cout<<sol<<endl;
-}
+}///ans:512 only works cuz of the easy input otherwise it would be a lot longer
 int main() {
     solve1();
     return 0;
